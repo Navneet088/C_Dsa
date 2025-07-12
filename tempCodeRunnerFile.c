@@ -1,0 +1,1 @@
+ printf("index of Key %d",usingRecSearch(arr,size,key,0));

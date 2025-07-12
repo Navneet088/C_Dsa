@@ -1,0 +1,1 @@
+ // travsal(deletFirst(head));

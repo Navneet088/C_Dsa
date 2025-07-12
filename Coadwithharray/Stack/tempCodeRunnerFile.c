@@ -1,0 +1,1 @@
+ newNode=newNode->next;
