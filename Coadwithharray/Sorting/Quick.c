@@ -2,19 +2,19 @@
 #include <stdlib.h>
 void quicSort(int arr[], int low, int high)
 {
-    int partitonind;
+    int pindex;
     if (low < high)
-    {
-        partitonind = partition(arr, low, high);
-        quicSort(arr, low, partitonind - 1);   // sort left sub arrry
-        quicSort(arr, partitonind + 1, high); // sort right sub array
+        {
+            pindex = partition(arr, low, high);
+            quickSort(arr, low, pindex - 1);   // sort left sub array
+            quickSort(arr, pindex + 1, high); // sort right sub array
+        }
     }
-}
 int partition(int arr[], int low, int high)
 {
     int pivot = arr[low];
-    int i = low + 1;
-    int j = high;
+    int i = low + 1; // Index of smaller element
+    int j = high; // Index of larger element
     int temp;
     do
     {
@@ -59,4 +59,3 @@ quicSort(arr,0,n-1);
 
     return 0;
 }
-// it is not complited

@@ -121,7 +121,7 @@ void quickSort(int arr[], int low, int high) {
 }
 
 int main(){
-    int arr[] = {4, 9, 3, 7, 10, 12, 2};
+    int arr[] = {4, 9, 3, 7, 10, 2, 13};
     int n = sizeof(arr) / sizeof(arr[0]); 
     print(arr, n);
     printf("\n");  
@@ -140,7 +140,9 @@ int main(){
     printf("Merge Sort:\n");
     mergeSort(arr, 0, n - 1);
     print(arr, n);
-    
-
+     printf("\n");
+    printf("Quick Sort:\n");
+    quickSort(arr, 0, n - 1);
+    print(arr, n);
     return 0;
 }
